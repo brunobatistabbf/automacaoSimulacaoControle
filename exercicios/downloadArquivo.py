@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 
 driver.get("htpps://jquery.com/resources/demos/progressbr/download.html")
 driver.implicitly_wait(5)
-download =  driver.find_element(By.ID, "downloadButton")
+download =  driver.find_element(By.NAME, "downloadButton")
 
 download.click()
 WebDriverWait(driver, 30).until(
