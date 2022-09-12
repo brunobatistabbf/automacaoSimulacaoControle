@@ -13,6 +13,7 @@ class Principal(webdriver.Chrome):
 
     def abrirFace(self):
         self.get('https://www.facebook.com')
+        self.close()
         print("O titulo da aplicação é:", self.title)
         print("O endereço url é:", self.current_url)
         self.close()
